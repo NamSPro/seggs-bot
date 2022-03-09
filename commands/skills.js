@@ -18,12 +18,12 @@ module.exports = {
                 .setRequired(true)
                 .addChoices(heroList)),
 	async execute(interaction) {
-        const name = interaction.options.getString('heroname')
-        const generalInfo = data[name]
-        const skillCombo = data[name].combo
-        const skillPassive = data[name].passive
-        const skill1 = data[name].s1
-        const skill2 = data[name].s2
+        const name = interaction.options.getString('heroname');
+        const generalInfo = data[name];
+        const skillCombo = data[name].combo;
+        const skillPassive = data[name].passive;
+        const skill1 = data[name].s1;
+        const skill2 = data[name].s2;
 
         const embed = new MessageEmbed()
             .setColor('AQUA')
@@ -35,8 +35,10 @@ module.exports = {
                 { name: 'Passive: ' + skillPassive.name, value: skillPassive.description },
                 { name: 'Skill 1: ' + skill1.name, value: '**' + skill1.specifics + '**\n' + skill1.description },
                 { name: 'Skill 2: ' + skill2.name, value: '**' + skill2.specifics + '**\n' + skill2.description },
+				// { name: '\u200b', value: 'a'}, // blank out either name or value
             )
-            .setFooter({ text: 'Seggs Bot v0.0.1, by NamSPro and Miyo' })
-		await interaction.reply({ embeds: [embed] })
+            .setFooter({ text: 'Seggs Bot v0.0.1, by NamSPro and Miyo' });
+
+		await interaction.reply({ embeds: [embed] });
 	},
 };

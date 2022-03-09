@@ -24,6 +24,17 @@
 			"name": "Beast Engrave",
 			"specifics": "MP Cost 2 / CD 20s",
 			"description": "Deals 576.45% P.DMG to enemies in a medium range in front of self, stunning hit enemies by 3s and increasing P.DMG they take by 50% for 10s. Afterwards, Maki enters [Flame of Ruin] state for 10s, increasing her own ATK by 154.35%."
+		},
+		"ug": {
+			"uw": {
+				"name": "God Hunting Sword",
+				"description": "Grants a stack of [Destruction Flame] on self upon hits. Upon the 50th stack of [Destruction Flame], consume all stacks to enter [God Hunting] state for 15s. While under [God Hunting], SPD is increased by (0), Crit DMG is increased by (1), and Crit Chance is increased by (2). [Destruction Flame] does not stack while under [God Hunting].",
+				"extra": {
+					"0": "3000, 3600, 4300, 5200, 6200, 7500",
+					"1": "100, 120, 144, 177, 208, 250",
+					"2": "300, 360, 430, 520, 620, 750"
+				}
+			}
 		}
 	},
 	"minami": {
