@@ -1,3 +1,6 @@
+// Command: /wiki
+// Returns a link to the KGA wiki
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {

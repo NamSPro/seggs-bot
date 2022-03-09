@@ -16,13 +16,13 @@ module.exports = {
 		.setName('uw')
 		.setDescription("Get a Diamiss' UW info")
 		.addStringOption(option =>
-            option.setName('heroname')
-                .setDescription('The name of the Diamiss to get UW')
-                .setRequired(true)
-                .addChoices(heroList)),
+			option.setName('heroname')
+				.setDescription('The name of the Diamiss to get UW')
+				.setRequired(true)
+				.addChoices(heroList)),
 	async execute(interaction) {
 		const name = interaction.options.getString('heroname');
-        const generalInfo = data[name];
+		const generalInfo = data[name];
 		const uwInfo = generalInfo.ug.uw;
 		let additionalInfo = '';
 		for (const itr in uwInfo.extra) {

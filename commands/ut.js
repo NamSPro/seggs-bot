@@ -17,13 +17,13 @@ module.exports = {
 		.setName('ut')
 		.setDescription("Get a Diamiss' UTs info")
 		.addStringOption(option =>
-            option.setName('heroname')
-                .setDescription('The name of the Diamiss to get UTs')
-                .setRequired(true)
-                .addChoices(heroList)),
+			option.setName('heroname')
+				.setDescription('The name of the Diamiss to get UTs')
+				.setRequired(true)
+				.addChoices(heroList)),
 	async execute(interaction) {
 		const name = interaction.options.getString('heroname');
-        const generalInfo = data[name];
+		const generalInfo = data[name];
 		const utInfo = generalInfo.ug.ut;
 
 		// All UTs in one embed construction
