@@ -18,7 +18,8 @@ for (const file of commandFiles) {
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
-	console.log('Ready!');
+	console.log('Welcome to the Primal Heaven.');
+	client.user.setActivity('/help', { type: 'COMPETING' });
 });
 
 client.on('interactionCreate', async interaction => {
