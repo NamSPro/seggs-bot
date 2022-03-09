@@ -1,4 +1,14 @@
 {
+	"commandList": {
+		"ping": "Pong!",
+		"help": "Display this help message.",
+		"sheet": "Get a link to the KGA translations sheet.",
+		"wiki": "Get a link to the KGA wiki (Japanese).",
+		"skills": "Get a Diamiss' skills.",
+		"uw": "Get a Diamiss' UW.",
+		"ut": "Get a Diamiss' UTs.",
+		"transcend": "Get a Diamiss' Trancendence Perks."
+	},
 	"list": {
 		"1": "maki",
 		"2": "minami"
@@ -6,81 +16,184 @@
 	"maki": {
 		"fullname": "Maki Kuonji",
 		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E4B985E981A0E5AFBAE79C9FE7A8805F69636F6E2E6A7067.jpg",
-		"combo": {
-			"name": "Hundred Gods Stampede",
-			"specifics": "[Maki x Minami]",
-			"description": "Deals 896% P.DMG to all enemies and knocks them down for 2s. Hit enemies take 30% increased all DMG for 10s."
-		},
-		"passive": {
-			"name": "Sabbath's Black Goat",
-			"description": "Upon auto attacking, there is a 20% chance of dealing an extra 110.25% P.DMG and stunning the hit enemy for 0.7s. If Maki is in the [Flame of Ruin] state, the chance for this passive increases by 40%."
-		},
-		"s1": {
-			"name": "Flame Reams",
-			"specifics": "MP Cost 2 / CD 12s",
-			"description": "Deals 1,176% P.DMG to nearby enemies. Upon a Crit Hit, increases Maki's Crit DMG by 3% for 10 secs. This effect can be stacked up to 30 times. Each hit also have a 30% chance of dealing an extra 823.2% P.DMG, and inflict stun on the hit enemy for 3s."
-		},
-		"s2": {
-			"name": "Beast Engrave",
-			"specifics": "MP Cost 2 / CD 20s",
-			"description": "Deals 576.45% P.DMG to enemies in a medium range in front of self, stunning hit enemies by 3s and increasing P.DMG they take by 50% for 10s. Afterwards, Maki enters [Flame of Ruin] state for 10s, increasing her own ATK by 154.35%."
+		"skill": {
+			"combo": {
+				"name": "Hundred Gods Stampede",
+				"specifics": "[Maki x Minami]",
+				"description": "Deals 896% P.DMG to all enemies and knocks them down for 2s. Hit enemies take 30% increased all DMG for 10s."
+			},
+			"passive": {
+				"name": "Sabbath's Black Goat",
+				"description": "Upon auto attacking, there is a 20% chance of dealing an extra 110.25% P.DMG and stunning the hit enemy for 0.7s. If Maki is in the [Flame of Ruin] state, the chance for this passive increases by 40%."
+			},
+			"s1": {
+				"name": "Flame Reams",
+				"specifics": "MP Cost 2 / CD 12s",
+				"description": "Deals 1,176% P.DMG to nearby enemies. Upon a Crit Hit, increases Maki's Crit DMG by 3% for 10 secs. This effect can be stacked up to 30 times. Each hit also have a 30% chance of dealing an extra 823.2% P.DMG, and inflict stun on the hit enemy for 3s."
+			},
+			"s2": {
+				"name": "Beast Engrave",
+				"specifics": "MP Cost 2 / CD 20s",
+				"description": "Deals 576.45% P.DMG to enemies in a medium range in front of self, stunning hit enemies by 3s and increasing P.DMG they take by 50% for 10s. Afterwards, Maki enters [Flame of Ruin] state for 10s, increasing her own ATK by 154.35%."
+			}
 		},
 		"ug": {
 			"uw": {
 				"name": "God Hunting Sword",
-				"description": "Grants a stack of [Destruction Flame] on self upon hits. Upon the 50th stack of [Destruction Flame], consume all stacks to enter [God Hunting] state for 15s. While under [God Hunting], SPD is increased by (0), Crit DMG is increased by (1), and Crit Chance is increased by (2). [Destruction Flame] does not stack while under [God Hunting].",
+				"description": "Grants a stack of [Destruction Flame] on self upon hits. Upon the 50th stack of [Destruction Flame], consume all stacks to enter [God Hunting] state for 15s. While under [God Hunting], SPD is increased by **(0)**, Crit DMG is increased by **(1)**, and Crit Chance is increased by **(2)**. [Destruction Flame] does not stack while under [God Hunting].",
 				"extra": {
 					"0": "3000, 3600, 4300, 5200, 6200, 7500",
-					"1": "100, 120, 144, 177, 208, 250",
+					"1": "100%, 120%, 144%, 177%, 208%, 250%",
 					"2": "300, 360, 430, 520, 620, 750"
 				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Maki's Ribbon",
+					"description": "[Sabbath's Black Goat] For 30s after battle start, increase passive activation chance by **(0)** and SPD by 350.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Family Photo",
+					"description": "[Flame Reams] Removes all debuffs on self upon casting. Each hit have a **(0)** chance of dispelling all buffs on the enemy hit.",
+					"extra": {
+						"0": "8%, 10%, 12%, 14%, 17%, 20%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Cat Plushie",
+					"description": "[Beast Engrave] Reduces Cooldown by 30%, and during [Flame of Ruin], Maki's SPD is increased by 250, and [Sabbath's Black Goat] activation chance is further increased by **(0)**.",
+					"extra": {
+						"0": "8%, 10%, 12%, 14%, 17%, 20%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases DMG by 40%.",
+				"dark": "Increases stun duration by 0.2s."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "When there is only 1 enemy, DMG is increased by 100%.",
+				"dark": "Reduces Cooldown by 2s."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "MP cost is reduced by 1000.",
+				"dark": "While in the [Flame of Ruin] state, increase own ATK by 100%."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100.",
+				"dark": "When MP is at max, increases ATK by 50% for 15s. This effect only activates once in 20s."
 			}
 		}
 	},
 	"minami": {
 		"fullname": "Minami Nasuhara",
 		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E5A588E9A088E58E9FE381BFE381AAE381BF5F69636F6E2E6A7067.jpg",
-		"combo": {
-			"name": "Hundred Gods Stampede",
-			"specifics": "[Maki x Minami]",
-			"description": "Deals 896% P.DMG to all enemies and knocks them down for 2s. Hit enemies take 30% increased all DMG for 10s."
-		},
-		"passive": {
-			"name": "Countryside White Fox",
-			"description": "All damage taken is reduced by 15%. Every 15 seconds from the beginning each battle, increases MDEF of one ally with the lowest HP by 31.5% for 10 seconds, and heals them by 2% their Max HP per second."
-		},
-		"s1": {
-			"name": "Scattering Cherry Blossoms",
-			"specifics": "MP Cost 2 / CD 8s",
-			"description": "Removes all debuffs of all allies around the ally with the lowest HP, and heals them by 960% ATK."
-		},
-		"s2": {
-			"name": "Falling Cherry Blossoms",
-			"specifics": "MP Cost 3 / CD 22s",
-			"description": "Attacks an enemy and enemies surrounding it 6 times, dealing a total of 529.2% M.DMG. Hit enemies are stunned for 6s and takes 25% increased All DMG. Also, deploys a shield on all allies that blocks 296.55% ATK DMG for 12s. While the shield is active, allies gain immunity to CC."
+		"skill": {
+			"combo": {
+				"name": "Hundred Gods Stampede",
+				"specifics": "[Maki x Minami]",
+				"description": "Deals 896% P.DMG to all enemies and knocks them down for 2s. Hit enemies take 30% increased all DMG for 10s."
+			},
+			"passive": {
+				"name": "Countryside White Fox",
+				"description": "All damage taken is reduced by 15%. Every 15 seconds from the beginning each battle, increases MDEF of one ally with the lowest HP by 31.5% for 10 seconds, and heals them by 2% their Max HP per second."
+			},
+			"s1": {
+				"name": "Scattering Cherry Blossoms",
+				"specifics": "MP Cost 2 / CD 8s",
+				"description": "Removes all debuffs of all allies around the ally with the lowest HP, and heals them by 960% ATK."
+			},
+			"s2": {
+				"name": "Falling Cherry Blossoms",
+				"specifics": "MP Cost 3 / CD 22s",
+				"description": "Attacks an enemy and enemies surrounding it 6 times, dealing a total of 529.2% M.DMG. Hit enemies are stunned for 6s and takes 25% increased All DMG. Also, deploys a shield on all allies that blocks 296.55% ATK DMG for 12s. While the shield is active, allies gain immunity to CC."
+			}
 		}
 	},
 	"template": {
 		"fullname": "",
 		"iconURL": "",
-		"combo": {
-			"name": "",
-			"specifics": "",
-			"description": ""
+		"skill": {
+			"combo": {
+				"name": "",
+				"specifics": "",
+				"description": ""
+			},
+			"passive": {
+				"name": "",
+				"description": ""
+			},
+			"s1": {
+				"name": "",
+				"specifics": "",
+				"description": ""
+			},
+			"s2": {
+				"name": "",
+				"specifics": "",
+				"description": ""
+			}
 		},
-		"passive": {
-			"name": "",
-			"description": ""
+		"ug": {
+			"uw": {
+				"name": "",
+				"description": "",
+				"extra": {
+					"0": ""
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: ",
+					"description": "",
+					"extra": {
+						"0": ""
+					}
+				},
+				"ut1": {
+					"name": "UT1: ",
+					"description": "",
+					"extra": {
+						"0": ""
+					}
+				},
+				"ut2": {
+					"name": "UT2: ",
+					"description": "",
+					"extra": {
+						"0": ""
+					}
+				}
+			}
 		},
-		"s1": {
-			"name": "",
-			"specifics": "",
-			"description": ""
-		},
-		"s2": {
-			"name": "",
-			"specifics": "",
-			"description": ""
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "",
+				"dark": ""
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "",
+				"dark": ""
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "",
+				"dark": ""
+			},
+			"t5": {
+				"light": "",
+				"dark": ""
+			}
 		}
 	}
 }

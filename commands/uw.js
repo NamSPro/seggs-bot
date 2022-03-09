@@ -1,3 +1,6 @@
+// Command: /uw
+// Displays the selected Diamiss' UW
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
 const data = require('./data.json');
@@ -32,7 +35,7 @@ module.exports = {
 			.setDescription(uwInfo.name)
 			.addFields(
 				{ name: '\u200b', value: uwInfo.description },
-				{ name: '\u200b', value: additionalInfo },
+				{ name: '\u200b', value: '**' + additionalInfo + '**' },
 			);
 
 		await interaction.reply({ embeds: [embed] });

@@ -1,3 +1,6 @@
+// Command: /sheet
+// Returns a link to the general KGA spreadsheet
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
