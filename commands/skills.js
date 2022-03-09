@@ -1,9 +1,11 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const skillData = require('./skillData.json')
+const data = require('./data.json');
 
-function capFirst(str) {
-    return str[0].toUpperCase() + str.slice(1);
+const heroList = [];
+for (const itr in data.list) {
+	const diamissName = data.list[itr];
+	heroList.push([ data[diamissName].fullname, diamissName ]);
 }
 
 module.exports = {
@@ -14,15 +16,14 @@ module.exports = {
             option.setName('heroname')
                 .setDescription('The name of the Diamiss to look up skills')
                 .setRequired(true)
-                .addChoice('Maki', 'maki')
-                .addChoice('Minami', 'minami')),
+                .addChoices(heroList)),
 	async execute(interaction) {
         const name = interaction.options.getString('heroname')
-        const generalInfo = skillData[name]
-        const skillCombo = skillData[name].combo
-        const skillPassive = skillData[name].passive
-        const skill1 = skillData[name].s1
-        const skill2 = skillData[name].s2
+        const generalInfo = data[name]
+        const skillCombo = data[name].combo
+        const skillPassive = data[name].passive
+        const skill1 = data[name].s1
+        const skill2 = data[name].s2
 
         const embed = new MessageEmbed()
             .setColor('AQUA')
