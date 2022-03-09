@@ -7,14 +7,41 @@
 		"skills": "Get a Diamiss' skills.",
 		"uw": "Get a Diamiss' UW.",
 		"ut": "Get a Diamiss' UTs.",
-		"transcend": "Get a Diamiss' Trancendence Perks."
+		"transcend": "Get a Diamiss' Trancendence Perks.",
+		"seggs": "No explanation needed."
 	},
 	"list": {
 		"1": "maki",
 		"2": "minami"
 	},
+	"genericTP": {
+		"t1": [
+			"Increases ATK by 30%.",
+			"Increases HP by 30%.",
+			"Increases All DEF by 35%.",
+			"Increases All Guard DEF by 30%.",
+			"Increases DMG dealt to non-Diamiss enemies by 10% and takes 10% reduced DMG. (Cost 15)"
+		],
+		"t2": {
+			"guardian": [
+				"Increases ASPD by 200 (?).",
+				"Increases MP/s by 70% per each enemy.",
+				"Increases All Guard by 200 and removes all negative effects on self every 10s.",
+				"Increases HP of all allies by 15%. If another ally uses the same Perk, only 5% applies.",
+				"Upon dealing DMG, reduces target's All DEF by 20%. Does not stack."
+			],
+			"slayer": [
+				"Increases Crit Chance by 150 and Crit DMG by 30%.",
+				"Increases ASPD by 200 (?).",
+				"Increases ATK by 15% and reduces DMG taken by 15%.",
+				"Increases All Guard by 200 and reduces DMG taken by 10%.",
+				"Increases ATK by 8% every 10s. Stacks up to 8 times."
+			]
+		}
+	},
 	"maki": {
 		"fullname": "Maki Kuonji",
+		"class": "slayer",
 		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E4B985E981A0E5AFBAE79C9FE7A8805F69636F6E2E6A7067.jpg",
 		"skill": {
 			"combo": {
