@@ -1,6 +1,6 @@
 {
 	"commandList": {
-		"ping": "Pong!",
+		"info": "Display some basic info.",
 		"help": "Display this help message.",
 		"sheet": "Get a link to the KGA translations sheet.",
 		"wiki": "Get a link to the KGA wiki (Japanese).",
@@ -115,6 +115,61 @@
 				"name": "Falling Cherry Blossoms",
 				"specifics": "MP Cost 3 / CD 22s",
 				"description": "Attacks an enemy and enemies surrounding it 6 times, dealing a total of 529.2% M.DMG. Hit enemies are stunned for 6s and takes 25% increased All DMG. Also, deploys a shield on all allies that blocks 296.55% ATK DMG for 12s. While the shield is active, allies gain immunity to CC."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Rush of a Hundred Flowers",
+				"description": "Every 8s, heals the 4 allies with the lowest HP by **(0)** ATK, and increases Crit Chance of the ally with the highest ATK by 300, and their Crit DMG by **(1)**.",
+				"extra": {
+					"0": "80%, 96%, 115%, 138%, 165%, 200%",
+					"1": "20%, 24%, 29%, 25%, 42%, 50%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Microphone",
+					"description": "[Countryside White Fox] Removes all debuffs on the target ally, and increases their Heal Rate by **(0)** for the duration.",
+					"extra": {
+						"0": "20%, 24%, 29%, 25%, 42%, 50%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Fan Letter",
+					"description": "[Scattering Cherry Blossoms] Increase Heal Rate by 50%, and healed allies become immune to DMG for **(0)**.",
+					"extra": {
+						"0": "1s, 1.2s, 1.4s, 1.7s, 2.1s, 2.5s"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Maple-Pattern Handkerchief",
+					"description": "[Falling Cherry Blossoms] Hit targets takes 20% increased M.DMG and the stun duration is increased by **(0)**. Shield strength is also increased by 50% and allies recover **(1)** MP per sec over 4s.",
+					"extra": {
+						"0": "1s, 1.2s, 1.4s, 1.7s, 2.1s, 2.5s",
+						"1": "100, 120, 144, 177, 208, 250"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "For the duration of the skill, DMG taken from non-Diamiss enemies is reduced by 30%.",
+				"dark": "Applies to 2 allies at the same time."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "MP cost is increased by 1000, but targets 2 allies.",
+				"dark": "Healed allies take 25% reduced M.DMG for 10s."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "MP cost is increased by 1000, but DMG is increased by 80% and shield strength is increased by 40%.",
+				"dark": "Reduces Cooldown by 3s and changes the target to a random enemy."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / M.Guard + 200",
+				"dark": "Increases ATK of all allies by 5% of own ATK."
 			}
 		}
 	},

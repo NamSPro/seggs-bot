@@ -33,6 +33,7 @@ module.exports = {
 			.setColor('AQUA')
 			.setTitle(generalInfo.fullname + ' UW')
 			.setDescription(uwInfo.name)
+			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' })
 			.addFields(
 				{ name: '\u200b', value: uwInfo.description },
 				{ name: '\u200b', value: '**' + additionalInfo + '**' },

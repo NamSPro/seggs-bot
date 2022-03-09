@@ -30,7 +30,7 @@ module.exports = {
 		const embedAllUTs = new MessageEmbed()
 			.setColor('AQUA')
 			.setTitle(generalInfo.fullname + ' UTs')
-			.setFooter({ text: 'Read the UT description or icon and CAREFULLY compare with the ingame UT.' });
+			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' });
 		for (const itr in utInfo) {
 			let additionalInfo = '';
 			for (const itr2 in utInfo[itr].extra) {
