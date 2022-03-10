@@ -26,7 +26,7 @@ module.exports = {
 		const generalInfo = data[name];
 		const utInfo = generalInfo.ug.ut;
 
-		// All UTs in one embed construction
+		// All UTs in one embed
 		const embedAllUTs = new MessageEmbed()
 			.setColor('AQUA')
 			.setTitle(generalInfo.fullname + ' UTs')
@@ -42,8 +42,94 @@ module.exports = {
 			);
 		}
 
-		// TODO: buttons, and specific UTs construction
+		// Passive UT embed
+		const embedPassiveUT = new MessageEmbed()
+			.setColor('AQUA')
+			.setTitle(generalInfo.fullname + ' Passive UT')
+			.setFooter({ text: 'Compare the image provided (if available) CAREFULLY against the ingame item.' });
+		let additionalInfo = '';
+		for (const itr in utInfo.utp.extra) {
+			additionalInfo += '(' + itr + '): ' + utInfo.utp.extra[itr] + '\n';
+		}
+		embedPassiveUT.addFields(
+			{ name: '**' + utInfo.utp.name + '**', value: utInfo.utp.description },
+			{ name: additionalInfo, value: '\u200b' }
+		);
 
-		await interaction.reply({ embeds: [embedAllUTs] });
+		// UT1 embed
+		const embedUT1 = new MessageEmbed()
+			.setColor('AQUA')
+			.setTitle(generalInfo.fullname + ' UT1')
+			.setFooter({ text: 'Compare the image provided (if available) CAREFULLY against the ingame item.' });
+		additionalInfo = '';
+		for (const itr in utInfo.ut1.extra) {
+			additionalInfo += '(' + itr + '): ' + utInfo.ut1.extra[itr] + '\n';
+		}
+		embedUT1.addFields(
+			{ name: '**' + utInfo.ut1.name + '**', value: utInfo.ut1.description },
+			{ name: additionalInfo, value: '\u200b' }
+		);
+
+		// UT2 embed
+		const embedUT2 = new MessageEmbed()
+			.setColor('AQUA')
+			.setTitle(generalInfo.fullname + ' UT2')
+			.setFooter({ text: 'Compare the image provided (if available) CAREFULLY against the ingame item.' });
+		additionalInfo = '';
+		for (const itr in utInfo.ut2.extra) {
+			additionalInfo += '(' + itr + '): ' + utInfo.ut2.extra[itr] + '\n';
+		}
+		embedUT2.addFields(
+			{ name: '**' + utInfo.ut2.name + '**', value: utInfo.ut2.description },
+			{ name: additionalInfo, value: '\u200b' }
+		);
+
+		// Buttons
+		const buttonRow = new MessageActionRow()
+			.addComponents(
+				new MessageButton()
+					.setCustomId('utp')
+					.setLabel('Passive UT')
+					.setStyle('PRIMARY'),
+			)
+			.addComponents(
+				new MessageButton()
+					.setCustomId('ut1')
+					.setLabel('UT1')
+					.setStyle('PRIMARY'),
+			)
+			.addComponents(
+				new MessageButton()
+					.setCustomId('ut2')
+					.setLabel('UT2')
+					.setStyle('PRIMARY'),
+			)
+			.addComponents(
+				new MessageButton()
+					.setCustomId('allUT')
+					.setLabel(generalInfo.fullname + ' UTs')
+					.setStyle('PRIMARY'),
+			);
+
+		// Button event handler
+		const filter = i => (i.customId === 'utp' || i.customId === 'ut1' || i.customId === 'ut2' || i.customId === 'allUT');
+		const collector = interaction.channel.createMessageComponentCollector({ filter, time: 30000 });
+		collector.on('collect', async i => {
+			if (i.customId === 'utp') {
+				await i.update({ embeds: [embedPassiveUT], components: [buttonRow] });
+			}
+			else if (i.customId === 'ut1') {
+				await i.update({ embeds: [embedUT1], components: [buttonRow] });
+			}
+			else if (i.customId === 'ut2') {
+				await i.update({ embeds: [embedUT2], components: [buttonRow] });
+			}
+			else {
+				await i.update({ embeds: [embedAllUTs], components: [buttonRow] });
+			}
+		});
+		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please try again.', components: [] }));
+
+		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedAllUTs], components: [buttonRow] });
 	},
 };

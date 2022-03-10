@@ -30,20 +30,22 @@ module.exports = {
 		const embedUniquePerks = new MessageEmbed()
 			.setTitle(generalInfo.fullname + ' Transcendence Perks')
 			.setColor('AQUA')
-			.setThumbnail(generalInfo.iconURL);
+			.setThumbnail(generalInfo.iconURL)
+			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' });
 		let t3Info = '';
 		for (const itr in transcendInfo) {
 			if (itr === 't5') break;
 			t3Info += '**' + transcendInfo[itr].name + '**\n[LIGHT] ' + transcendInfo[itr].light + '\n[DARK] ' + transcendInfo[itr].dark + '\n';
 		}
 		embedUniquePerks.addField('**T3 Perks**', t3Info);
-		let t5Info = '[LIGHT] ' + transcendInfo.t5.light + '\n[Dark] ' + transcendInfo.t5.dark + '\n';
+		let t5Info = '[LIGHT] ' + transcendInfo.t5.light + '\n[DARK] ' + transcendInfo.t5.dark + '\n';
 		embedUniquePerks.addField('\u200b', '**T5 Perks**\n' + t5Info);
 
 		// T2 and below perks
 		const embedGenericPerks = new MessageEmbed()
 			.setTitle('Generic Transcendence Perks')
-			.setColor('AQUA');
+			.setColor('AQUA')
+			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' });
 		let t1Info = '';
 		for (const itr in data.genericTP.t1){
 			t1Info += data.genericTP.t1[itr] + '\n';
@@ -56,7 +58,7 @@ module.exports = {
 		embedGenericPerks.addField('**T2 Perks**', t2Info);
 
 		// Buttons!
-		const row = new MessageActionRow()
+		const buttonRow = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
 					.setCustomId('generic')
@@ -70,26 +72,20 @@ module.exports = {
 					.setStyle('PRIMARY'),
 			);
 		
-		// Specific button event handler
-		const filterSpecific = i => i.customId === 'specific';
-		const collectorSpecific = interaction.channel.createMessageComponentCollector({ filterSpecific, time: 30000 });
-		collectorSpecific.on('collect', async i => {
+		// button event handler
+		const filter = i => (i.customId === 'specific' || i.customId === 'generic');
+		const collector = interaction.channel.createMessageComponentCollector({ filter, time: 30000 });
+		collector.on('collect', async i => {
 			if (i.customId === 'specific') {
-				await i.update({ embeds: [embedUniquePerks], components: [row] });
+				await i.update({ embeds: [embedUniquePerks], components: [buttonRow] });
+			}
+			else {
+				await i.update({ embeds: [embedGenericPerks], components: [buttonRow] });
 			}
 		});
-		collectorSpecific.on('end', collected => interaction.editReply({ components: [] }));
-		// Generic button event handler
-		const filterGeneric = i => i.customId === 'generic';
-		const collectorGeneric = interaction.channel.createMessageComponentCollector({ filterGeneric, time: 30000 });
-		collectorGeneric.on('collect', async i => {
-			if (i.customId === 'generic') {
-				await i.update({ embeds: [embedGenericPerks], components: [row] });
-			}
-		});
-		collectorGeneric.on('end', collected => interaction.editReply({ components: [] }));
+		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please try again.', components: [] }));
 
 		// Finally outputting
-		await interaction.reply({ embeds: [embedUniquePerks], components: [row] });
+		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedUniquePerks], components: [buttonRow] });
 	},
 };

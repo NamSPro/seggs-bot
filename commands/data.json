@@ -12,7 +12,8 @@
 	},
 	"list": {
 		"1": "maki",
-		"2": "minami"
+		"2": "minami",
+		"3": "shi"
 	},
 	"genericTP": {
 		"t1": [
@@ -36,6 +37,34 @@
 				"Increases ATK by 15% and reduces DMG taken by 15%.",
 				"Increases All Guard by 200 and reduces DMG taken by 10%.",
 				"Increases ATK by 8% every 10s. Stacks up to 8 times."
+			],
+			"mechanic": [
+				"Increases Crit Chance by 150 and Crit DMG by 30%.",
+				"Increases ATK by 20% and ASPD by 100 (?).",
+				"Upon critical hits, deals an extra 20% ATK as DMG and reduces target's Heal Rate by 20%. Heal Rate reduction effect does not stack.",
+				"Upon attacking, increases DMG the target takes and reduces its ASPD by 200 for 10s. This effect only activates once every 3s.",
+				"Increases Crit DMG by 4% every 5s. Stacks up to 25 times and is irremovable."
+			],
+			"mystic": [
+				"Increases ATK by 20% and ASPD by 1000.",
+				"Increases MP/s by 70% per each enemy.",
+				"Increases Crit Chance by 400.",
+				"Increases all allies' Crit DMG by 20%. If another ally uses the same Perk, only 10% applies.",
+				"Upon attacking, reduces the target's ATK by 15% and Crit Chance by 150. Does not stack."
+			],
+			"wizard": [
+				"Increases Crit Chance by 150 and Crit DMG by 30%.",
+				"Increases MP/s by 200%.",
+				"Takes 15% increased DMG, but increases ATK by 40%.",
+				"Increases all allies' ATK by 15%. If another ally uses the same Perk, only 3% applies.",
+				"Upon taking a hit, becomes invulnerable for 3s. This effect only activates once every 45s."
+			],
+			"medic": [
+				"Every 10s, heal all allies by 10% their Max HP.",
+				"Increases MP/s by 200%.",
+				"Increases ASPD of all allies by 150. If another ally uses the same Perk, only 50 applies.",
+				"Increases Crit Chance of all allies by 150. If another ally uses the same Perk, only 50 applies.",
+				"Upon taking a hit, becomes invulnerable for 3s. This effect only activates once every 45s."
 			]
 		}
 	},
@@ -122,6 +151,7 @@
 	},
 	"minami": {
 		"fullname": "Minami Nasuhara",
+		"class": "medic",
 		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E5A588E9A088E58E9FE381BFE381AAE381BF5F69636F6E2E6A7067.jpg",
 		"skill": {
 			"combo": {
@@ -200,8 +230,88 @@
 			}
 		}
 	},
+	"shi": {
+		"fullname": "Shi Touding",
+		"class": "guardian",
+		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E69982E9808FE5AE9A5F69636F6E2E6A7067.jpg",
+		"skill": {
+			"combo": {
+				"name": "Love Poison",
+				"specifics": "[Shi x Moegi]",
+				"description": "Dispel all buffs from 2 enemies with the highest ATK, and inflict [Love Poison] on them that deals 1600% M.DMG over 8s. Targets under [Love Poison] have their All Block reduced by 30% and MP Recovery reduced by 50%. [Love Poison] DMG is only based off of Moegi's ATK."
+			},
+			"passive": {
+				"name": "Mark of Deprivation",
+				"description": "Inflicts one stack of [Mark of Deprivation] upon dealing DMG. Upon the 10th stack of [Mark of Deprivation], consumes all stacks to deal 44.4% M.DMG, inflict stun for 2s, and reduces hit enemies' ATK by 20%."
+			},
+			"s1": {
+				"name": "Snatch",
+				"specifics": "MP Cost 2 / CD 20s",
+				"description": "Deals 497.4% M.DMG to enemies around the target and stuns them for 3s. Also, reduces Cooldown of the ally with the highest ATK by 3s, and increases their ATK by 220.5% for 15s."
+			},
+			"s2": {
+				"name": "Deprive",
+				"specifics": "MP Cost 4 / CD 23s",
+				"description": "Heals all allies except Shi by 844.8%, and increases their PDEF by 20% for 5s. Deals 168.6% M.DMG to surrounding enemies over 8 hits, knocks them down for 3s, and reduces their MDEF by 10% for 5s."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Farsa",
+				"description": "Upon hittings 5 normal attacks on an enemy, increases M.DMG it takes by **(0)** and stuns it for 0.5s.",
+				"extra": {
+					"0": "20%, 24%, 29%, 35%, 42%, 50%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Collar",
+					"description": "[Mark of Deprivation] Stun duration is increased by 1s, and hit targets take **(0)** increased M.DMG.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Smartphone",
+					"description": "[Snatch] Dispel all buffs on enemies hit. Per each enemy hit, recovers **(0)** MP.",
+					"extra": {
+						"0": "200, 240, 290, 350, 420, 500"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Suspicious Vial",
+					"description": "[Deprive] Reduces MP cost by 1000, and reduces P.DMG allies take by **(0)** for 10s.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases ATK reduction by 10%, to 30%.",
+				"dark": "The number of stacks required is reduced from 10 to 7."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Increases own ASPD by 350 after use.",
+				"dark": "Reduces Cooldown by 2s."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "MP cost is reduced by 1000.",
+				"dark": "Increases the duration of MDEF reduction by 5s."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / P.Guard + 200",
+				"dark": "At the beginning of the first battle, increases PDEF of the ally with the highest ATK by 20% of own PDEF. This effect cannot be dispelled."
+			}
+		}
+	},
 	"template": {
 		"fullname": "",
+		"class": "",
 		"iconURL": "",
 		"skill": {
 			"combo": {

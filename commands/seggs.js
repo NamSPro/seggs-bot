@@ -5,6 +5,6 @@ module.exports = {
 		.setName('seggs')
 		.setDescription('SEGGS!?'),
 	async execute(interaction) {
-		await interaction.reply('https://http.cat/450.jpg');
+		await interaction.reply({ content: 'https://cdn.discordapp.com/attachments/922550552183836712/951192117777162320/SPOILER_AnimatedTheo.gif', ephemeral: true });
 	},
 };
