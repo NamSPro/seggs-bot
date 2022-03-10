@@ -30,7 +30,7 @@ module.exports = {
 		const embedUniquePerks = new MessageEmbed()
 			.setTitle(generalInfo.fullname + ' Transcendence Perks')
 			.setColor('AQUA')
-			.setThumbnail(generalInfo.iconURL)
+			.setThumbnail('attachment://' + name + '.jpg')
 			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' });
 		let t3Info = '';
 		for (const itr in transcendInfo) {
@@ -83,9 +83,9 @@ module.exports = {
 				await i.update({ embeds: [embedGenericPerks], components: [buttonRow] });
 			}
 		});
-		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please try again.', components: [] }));
+		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please reuse the command.', components: [] }));
 
 		// Finally outputting
-		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedUniquePerks], components: [buttonRow] });
+		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedUniquePerks], components: [buttonRow], files: ['./images/' + name + '.jpg'] });
 	},
 };

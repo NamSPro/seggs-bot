@@ -30,7 +30,7 @@ module.exports = {
 
 		const embed = new MessageEmbed()
 			.setColor('AQUA')
-			.setThumbnail(generalInfo.iconURL)
+			.setThumbnail('attachment://' + name + '.jpg')
 			.setTitle(generalInfo.fullname + " Skills")
 			.setDescription('All skills are at level 4, unless specified otherwise.')
 			.addFields(
@@ -41,6 +41,6 @@ module.exports = {
 			)
 			.setFooter({ text: 'Seggs Bot v0.0.1, by NamSPro and Miyo' });
 
-		await interaction.reply({ embeds: [embed] });
+		await interaction.reply({ embeds: [embed], files: ['./images/' + name + '.jpg'] });
 	},
 };

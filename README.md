@@ -11,8 +11,8 @@ nodemon
 ```
 
 ### config-EDITME
-- If you only wish to deploy to one server, add a `guildId` field.
-- If you wish to deploy to every server your bot joins, uncomment the `rest.put` which routes to `ApplicationCommands` and comment the  `rest.put` which routes to `applicationGuildCommands` in `deploy_commands.js`. In this case you don't need a `guildId` field.
+- If you wish have a specific server deployed instantly, add a `guildId` field.
+- If you wish to deploy to every server your bot joins, uncomment the `rest.put` which routes to `ApplicationCommands` in `deploy_commands.js`. In this case you don't need the `guildId` field.
 
 ## Credits
 Thanks to the entire KGA English community, without which I wouldn't even have the idea to start this project.

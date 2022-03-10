@@ -128,7 +128,7 @@ module.exports = {
 				await i.update({ embeds: [embedAllUTs], components: [buttonRow] });
 			}
 		});
-		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please try again.', components: [] }));
+		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please reuse the command.', components: [] }));
 
 		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedAllUTs], components: [buttonRow] });
 	},

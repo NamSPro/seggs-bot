@@ -71,7 +71,6 @@
 	"maki": {
 		"fullname": "Maki Kuonji",
 		"class": "slayer",
-		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E4B985E981A0E5AFBAE79C9FE7A8805F69636F6E2E6A7067.jpg",
 		"skill": {
 			"combo": {
 				"name": "Hundred Gods Stampede",
@@ -152,7 +151,6 @@
 	"minami": {
 		"fullname": "Minami Nasuhara",
 		"class": "medic",
-		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E5A588E9A088E58E9FE381BFE381AAE381BF5F69636F6E2E6A7067.jpg",
 		"skill": {
 			"combo": {
 				"name": "Hundred Gods Stampede",
@@ -233,7 +231,6 @@
 	"shi": {
 		"fullname": "Shi Touding",
 		"class": "guardian",
-		"iconURL": "https://kamigoroshi-aria.wikiru.jp/attach2/696D67_E69982E9808FE5AE9A5F69636F6E2E6A7067.jpg",
 		"skill": {
 			"combo": {
 				"name": "Love Poison",
@@ -312,7 +309,6 @@
 	"template": {
 		"fullname": "",
 		"class": "",
-		"iconURL": "",
 		"skill": {
 			"combo": {
 				"name": "",
