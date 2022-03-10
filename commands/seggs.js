@@ -1,3 +1,6 @@
+// Command: /seggs
+// R18: Should be self explanatory
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {

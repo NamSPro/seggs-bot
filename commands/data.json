@@ -13,7 +13,7 @@
 	"list": {
 		"1": "maki",
 		"2": "minami",
-		"3": "shi"
+		"3": "sadame"
 	},
 	"genericTP": {
 		"t1": [
@@ -25,7 +25,7 @@
 		],
 		"t2": {
 			"guardian": [
-				"Increases ASPD by 200 (?).",
+				"Increases ASPD by 2000.",
 				"Increases MP/s by 70% per each enemy.",
 				"Increases All Guard by 200 and removes all negative effects on self every 10s.",
 				"Increases HP of all allies by 15%. If another ally uses the same Perk, only 5% applies.",
@@ -33,14 +33,14 @@
 			],
 			"slayer": [
 				"Increases Crit Chance by 150 and Crit DMG by 30%.",
-				"Increases ASPD by 200 (?).",
+				"Increases ASPD by 2000.",
 				"Increases ATK by 15% and reduces DMG taken by 15%.",
 				"Increases All Guard by 200 and reduces DMG taken by 10%.",
 				"Increases ATK by 8% every 10s. Stacks up to 8 times."
 			],
 			"mechanic": [
 				"Increases Crit Chance by 150 and Crit DMG by 30%.",
-				"Increases ATK by 20% and ASPD by 100 (?).",
+				"Increases ATK by 20% and ASPD by 1000.",
 				"Upon critical hits, deals an extra 20% ATK as DMG and reduces target's Heal Rate by 20%. Heal Rate reduction effect does not stack.",
 				"Upon attacking, increases DMG the target takes and reduces its ASPD by 200 for 10s. This effect only activates once every 3s.",
 				"Increases Crit DMG by 4% every 5s. Stacks up to 25 times and is irremovable."
@@ -62,7 +62,7 @@
 			"medic": [
 				"Every 10s, heal all allies by 10% their Max HP.",
 				"Increases MP/s by 200%.",
-				"Increases ASPD of all allies by 150. If another ally uses the same Perk, only 50 applies.",
+				"Increases ASPD of all allies by 1500. If another ally uses the same Perk, only 500 applies.",
 				"Increases Crit Chance of all allies by 150. If another ally uses the same Perk, only 50 applies.",
 				"Upon taking a hit, becomes invulnerable for 3s. This effect only activates once every 45s."
 			]
@@ -228,13 +228,13 @@
 			}
 		}
 	},
-	"shi": {
-		"fullname": "Shi Touding",
+	"sadame": {
+		"fullname": "Tokitou Sadame",
 		"class": "guardian",
 		"skill": {
 			"combo": {
 				"name": "Love Poison",
-				"specifics": "[Shi x Moegi]",
+				"specifics": "[Sadame x Moegi]",
 				"description": "Dispel all buffs from 2 enemies with the highest ATK, and inflict [Love Poison] on them that deals 1600% M.DMG over 8s. Targets under [Love Poison] have their All Block reduced by 30% and MP Recovery reduced by 50%. [Love Poison] DMG is only based off of Moegi's ATK."
 			},
 			"passive": {
@@ -249,7 +249,7 @@
 			"s2": {
 				"name": "Deprive",
 				"specifics": "MP Cost 4 / CD 23s",
-				"description": "Heals all allies except Shi by 844.8%, and increases their PDEF by 20% for 5s. Deals 168.6% M.DMG to surrounding enemies over 8 hits, knocks them down for 3s, and reduces their MDEF by 10% for 5s."
+				"description": "Heals all allies except Sadame by 844.8%, and increases their PDEF by 20% for 5s. Deals 168.6% M.DMG to surrounding enemies over 8 hits, knocks them down for 3s, and reduces their MDEF by 10% for 5s."
 			}
 		},
 		"ug": {

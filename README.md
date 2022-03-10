@@ -11,8 +11,11 @@ nodemon
 ```
 
 ### config-EDITME
-- If you wish have a specific server deployed instantly, add a `guildId` field.
+- If you wish to have a specific server deployed instantly, add a `guildId` field. Otherwise comment the `rest.put` which routes to `ApplicationGuildCommands`.
 - If you wish to deploy to every server your bot joins, uncomment the `rest.put` which routes to `ApplicationCommands` in `deploy_commands.js`. In this case you don't need the `guildId` field.
+
+## R18 Warning
+`/seggs` is the command which will have R18 output. Use/deploy at your own risk.
 
 ## Credits
 Thanks to the entire KGA English community, without which I wouldn't even have the idea to start this project.

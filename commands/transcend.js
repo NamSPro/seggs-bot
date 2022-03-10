@@ -86,6 +86,6 @@ module.exports = {
 		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please reuse the command.', components: [] }));
 
 		// Finally outputting
-		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedUniquePerks], components: [buttonRow], files: ['./images/' + name + '.jpg'] });
+		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedUniquePerks], components: [buttonRow], files: ['./images/faces/' + name + '.jpg'] });
 	},
 };

@@ -41,6 +41,6 @@ module.exports = {
 			)
 			.setFooter({ text: 'Seggs Bot v0.0.1, by NamSPro and Miyo' });
 
-		await interaction.reply({ embeds: [embed], files: ['./images/' + name + '.jpg'] });
+		await interaction.reply({ embeds: [embed], files: ['./images/faces/' + name + '.jpg'] });
 	},
 };
