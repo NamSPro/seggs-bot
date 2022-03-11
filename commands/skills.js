@@ -32,7 +32,7 @@ module.exports = {
 			.setColor('AQUA')
 			.setThumbnail('attachment://' + name + '.jpg')
 			.setTitle(generalInfo.fullname + " Skills")
-			.setDescription('All skills are at level 4, unless specified otherwise.')
+			.setDescription('All skills are at level 4, unless specified otherwise.\nMP Cost is shown as dots cost, 1 dot = 1000 MP.')
 			.addFields(
 				{ name: 'Combo Skill: ' + skillCombo.name, value: '**' + skillCombo.specifics + '**\n' + skillCombo.description },
 				{ name: 'Passive: ' + skillPassive.name, value: skillPassive.description },

@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
 	console.log('Welcome to the Primal Heaven.');
-	client.user.setActivity('/help', { type: 'COMPETING' });
+	client.user.setActivity('use slash commands more!');
 });
 
 client.on('interactionCreate', async interaction => {

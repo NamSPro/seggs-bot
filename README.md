@@ -5,10 +5,14 @@ Bot for various information on the game, 神殺しのアリア (KGA)
 ```
 clone this repo
 npm i / npm ci
-edit config-EDITME
+edit config-EDITME and save as config.json
 node deploy_commands.js
-nodemon
+node .
 ```
+
+### Images dependency
+- The image assets are downloaded/cloned from [here](https://github.com/NamSPro/seggs-bot-assets)
+- For R18 assets to use with `/seggs`, contact me.
 
 ### config-EDITME
 - If you wish to have a specific server deployed instantly, add a `guildId` field. Otherwise comment the `rest.put` which routes to `ApplicationGuildCommands`.

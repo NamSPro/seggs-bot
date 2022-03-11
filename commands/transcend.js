@@ -29,6 +29,7 @@ module.exports = {
 		// T3 and up perks
 		const embedUniquePerks = new MessageEmbed()
 			.setTitle(generalInfo.fullname + ' Transcendence Perks')
+			.setDescription('The order of T3 perks in game are: S1 column, S2 column, Passive column.')
 			.setColor('AQUA')
 			.setThumbnail('attachment://' + name + '.jpg')
 			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' });
@@ -77,10 +78,10 @@ module.exports = {
 		const collector = interaction.channel.createMessageComponentCollector({ filter, time: 30000 });
 		collector.on('collect', async i => {
 			if (i.customId === 'specific') {
-				await i.update({ embeds: [embedUniquePerks], components: [buttonRow] });
+				await i.update({ embeds: [embedUniquePerks], components: [buttonRow], files: ['./images/faces/' + name + '.jpg'] });
 			}
 			else {
-				await i.update({ embeds: [embedGenericPerks], components: [buttonRow] });
+				await i.update({ embeds: [embedGenericPerks], components: [buttonRow], files: [] });
 			}
 		});
 		collector.on('end', collected => interaction.editReply({ content: 'Interaction timed out! Please reuse the command.', components: [] }));
@@ -88,4 +89,4 @@ module.exports = {
 		// Finally outputting
 		await interaction.reply({ content: 'This interaction will timeout in 30s.', embeds: [embedUniquePerks], components: [buttonRow], files: ['./images/faces/' + name + '.jpg'] });
 	},
-};
+}

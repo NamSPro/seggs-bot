@@ -13,7 +13,11 @@
 	"list": {
 		"1": "maki",
 		"2": "minami",
-		"3": "sadame"
+		"3": "sadame",
+		"4": "ellie",
+		"5": "cecilia",
+		"20": "tsukasa",
+		"22": "yurara"
 	},
 	"genericTP": {
 		"t1": [
@@ -38,7 +42,7 @@
 				"Increases All Guard by 200 and reduces DMG taken by 10%.",
 				"Increases ATK by 8% every 10s. Stacks up to 8 times."
 			],
-			"mechanic": [
+			"ranger": [
 				"Increases Crit Chance by 150 and Crit DMG by 30%.",
 				"Increases ATK by 20% and ASPD by 1000.",
 				"Upon critical hits, deals an extra 20% ATK as DMG and reduces target's Heal Rate by 20%. Heal Rate reduction effect does not stack.",
@@ -303,6 +307,319 @@
 			"t5": {
 				"light": "ATK, DEF, HP + 15% / P.Guard + 200",
 				"dark": "At the beginning of the first battle, increases PDEF of the ally with the highest ATK by 20% of own PDEF. This effect cannot be dispelled."
+			}
+		}
+	},
+	"ellie": {
+		"fullname": "Ellie Mathers",
+		"class": "ranger",
+		"skill": {
+			"combo": {
+				"name": "Execution",
+				"specifics": "[Ellie x Cecilia]",
+				"description": "Deals 3120% P.DMG to the enemy with the highest ATK, and recover MP of all allies by 1000."
+			},
+			"passive": {
+				"name": "Snake's Obsession",
+				"description": "Upon attacking, increases ATK by 5.25% and Crit Chance by 100 for 10 sec. This effect stacks up to 3 times."
+			},
+			"s1": {
+				"name": "Bullet Rain",
+				"specifics": "MP Cost 3 / CD 8s",
+				"description": "Shoots 12 bullets to random enemies and deal a total of 4060.8% P.DMG. Each time an attack hits, increase Crit Chance of one random ally by 5% for 10 sec."
+			},
+			"s2": {
+				"name": "Inferno Cannon",
+				"specifics": "MP Cost 4 / CD 20s",
+				"description": "Fires in a straight line, dealing 3440.4% P.DMG to enemies in range and knocks them down for 3 sec. Against Bosses, deals additional 3440.4% P.DMG that ignores DEF."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Viper",
+				"description": "Upon Critical Hits, own SPD is increased by 200 for 10s, and for the duration, each auto attack deals an extra **(0)** P.DMG to the target.",
+				"extra": {
+					"0": "100%, 120%, 140%, 170%, 210%, 250%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Luxury Tea Set",
+					"description": "[Snake's Obsession] When [Snake's Obsession] stacks is 2 or more, increases SPD by 100 per [Snake's Obsession] stack, and DMG dealt to non-Diamiss enemies is increased by **(0)**.",
+					"extra": {
+						"0": "2%, 2.4%, 2.9%, 3.5%, 4.2%, 5%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Father's Pocketwatch",
+					"description": "[Bullet Rain] Reduces MP Cost by 1000 and Cooldown by **(0)**.",
+					"extra": {
+						"0": "1s, 1.2s, 1.4s, 1.7s, 2.1s, 2.5s"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Ancient Magic Codex",
+					"description": "[Inferno Cannon] Increases DMG by **(0)**, and increases P.DMG the targets take by 20% for 10s.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases the max number of stacks to 5.",
+				"dark": "Increases buff duration to 13s."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Increases DMG by 40%.",
+				"dark": "Crit Chance buff will always apply to self."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Reduces Cooldown by 3s.",
+				"dark": "Ignores target's Guard."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit DMG + 20%",
+				"dark": "Reduces Crit Chance by 300, but increases Crit DMG by 150%."
+			}
+		}
+	},
+	"cecilia": {
+		"fullname": "Cecilia Faraday",
+		"class": "wizard",
+		"skill": {
+			"combo": {
+				"name": "Execution",
+				"specifics": "[Ellie x Cecilia]",
+				"description": "Deals 3120% P.DMG to the enemy with the highest ATK, and recover MP of all allies by 1000."
+			},
+			"passive": {
+				"name": "Evil Eye of Ruin",
+				"description": "Inflicts a stack of [Black Flame] upon hitting an enemy. Enemies affected by [Black Flame] take 192% M.DMG over 20 sec. [Black Flame] can be stacked up to max 10 times. "
+			},
+			"s1": {
+				"name": "Shadow Roar",
+				"specifics": "MP Cost 3 / CD 10s",
+				"description": "Deals 2150.4% M.DMG to an enemy and enemies surrounding it, stunning them for 2s. If the target is a boss, deals an extra 2150.4% M.DMG."
+			},
+			"s2": {
+				"name": "Dark Matter",
+				"specifics": "MP Cost 4 / CD 15s",
+				"description": "Attacks all enemies 5 times, dealing a total of 3684% M.DMG. This attack haves 150% increased Crit DMG."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Magic Wand Sheidel",
+				"description": "Skill hits deal an additional **(0)** M.DMG for each stack of [Black Flame] on the enemy.",
+				"extra": {
+					"0": "3%, 3.6%, 4.2%, 5.2%, 6.3%, 7.5%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Dance Shoes",
+					"description": "[Evil Eye of Ruin] [Black Flame] becomes irremovable and enemies take **(0)** increased M.DMG per each stack of [Black Flame].",
+					"extra": {
+						"0": "1%, 1.2%, 1.4%, 1.7%, 2.1%, 2.5%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Locket Pendant",
+					"description": "[Shadow Roar] MP Cost is reduced by 1000 and DMG is increased by **(0)**.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Perfume",
+					"description": "[Dark Matter] Increases DMG by **(0)**. Upon Crit Hitting an enemy with 5 or more stacks of [Black Flame], reduces Cooldown by 3%. Upon killing an enemy, reduces Cooldown by 20%.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases the max stacks of [Black Flame] to 12.",
+				"dark": "Every 10s, enemies with [Black Flame] are stunned for 2s. Enemies with 10 or more stacks of [Black Flame] are stunned for 3s instead."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Enemies hit with 10 or more stacks of [Black Flame] takes 40% increased M.DMG for 10s.",
+				"dark": "Inflicts 10 stacks of [Black Flame] on hit enemies."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases DMG by 40%.",
+				"dark": "If there are at least 5 enemies, reduces MP Cost by 2000 and Cooldown by 5s."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100",
+				"dark": "Enemies with 10 or more stacks of [Black Flame] takes 30% increased M.DMG. Every second, inflicts 2 stacks of [Black Flame] to all non-Diamiss enemies."
+			}
+		}
+	},
+	"tsukasa": {
+		"fullname": "Ayase Tsukasa",
+		"class": "wizard",
+		"skill": {
+			"combo": {
+				"name": "None",
+				"specifics": "This combo skill haven't been implemented, yet.",
+				"description": "\u200b"
+			},
+			"passive": {
+				"name": "Wisdom of the Duke of Mind",
+				"description": "Increases all allies' ATK by 6.3%. Upon using a Skill, Tsukasa gains one stack of [Knowledge]. Upon the 3rd stack of [Knowledge], Tsukasa gains [Wisdom of the Duke of Mind], increasing her Crit DMG by 30% and all skill effects by 10%. [Wisdom of the Duke of Mind] stacks up to 5 times, and cannot be dispelled."
+			},
+			"s1": {
+				"name": "Academic Grant",
+				"specifics": "MP Cost 3 / CD 10s",
+				"description": "For 12s, increases all allies' ATK by 322.5%, and their DMG dealt to Bosses by 15%."
+			},
+			"s2": {
+				"name": "Mind Control",
+				"specifics": "MP Cost 4 / CD 12s",
+				"description": "Attacks the target and its surroundings twice, dealing a total of 2409.6% M.DMG and knocks them down for 5s. Hit targets take 30% increased M.DMG for 10s."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Illusion of Wisdom",
+				"description": "Increases the max stack of [Wisdom of the Duke of Mind] to **(0)**, and Tsukasa gains one stack of [Knowledge] every **(1)**.",
+				"extra": {
+					"0": "9, 10, 11, 12, 13, 15",
+					"1": "14, 13, 12, 11, 10, 9"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Colored Lipstick",
+					"description": "[WIsdom of the Duke of Mind] Increases ATK Boost by 50%, and increases all allies' Crit DMG by **(0)** upon gaining [Wisdom of the Duke of Mind].",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Monocle",
+					"description": "[Academic Grant] Reduces MP Cost by 1000, and increases buff duration by **(0)**.",
+					"extra": {
+						"0": "1.6s, ?, ?, ?, ?, ?"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Fantasy Novel",
+					"description": "[Mind Control] Per each enemy hit, reduces Cooldown by 10% and increases DMG by **(0)**.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Upon activation, recovers 2000 MP.",
+				"dark": "Upon activation, increases own ATK by 50%."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Changes the DMG dealt to Bosses bonus to 25% for the first 3 uses.",
+				"dark": "Reduces Cooldown by 3s and MP Cost by 1000."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases MP Cost by 1000 and DMG by 100%.",
+				"dark": "Hit targets take increased All DMG instead of only M.DMG."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100",
+				"dark": "Reduces all skills Cooldown by 15% every 20s."
+			}
+		}
+	},
+	"yurara": {
+		"fullname": "Miyama Yurara",
+		"class": "mystic",
+		"skill": {
+			"combo": {
+				"name": "None",
+				"specifics": "This combo skill haven't been implemented, yet.",
+				"description": "\u200b"
+			},
+			"passive": {
+				"name": "Fallen Angel of Lazyness",
+				"description": "Yurara gains 1 [Rest] every 0.5s and 10 [Rest] every 1000 MP spent. Upon reaching 100 [Rest], she gets [Motivated], increases her ATK by 31.5% for 15s, and all skills Cooldown is reduced by 10% upon normal attacking. Yurara does not gain [Rest] while [Motivated]. All effects are irremovable."
+			},
+			"s1": {
+				"name": "Immoral Heart",
+				"specifics": "MP Cost 2 / CD 10s",
+				"description": "Removes all debuffs from all allies, heals them for 378% ATK over 10s, and reduces their DMG taken by 30% for the duration. If Yurara is [Motivated], all allies additionally gain 250 Crit Chance and immunity to CC."
+			},
+			"s2": {
+				"name": "Invitation to Depravity",
+				"specifics": "MP Cost 3 / CD 12s",
+				"description": "Deals 1344% M.DMG to all enemies around a random target. If Yurara is [Motivated], deals an additional 3024% M.DMG over 5s, and stuns targets for 1s."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Sin of Sloth",
+				"description": "Every **(0)**, gains 1 stack of [Rest] and recovers 1% MP.",
+				"extra": {
+					"0": "1.5s, 1.4s, 1.3s, 1.1s, 0.9s, 0.7s"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Male Idol Photobook",
+					"description": "[Fallen Angel of Lazyness] At the start of battle, gains 50 stacks of [Rest]. While [Motivated], Cooldown reduction upon normal attacks is further reduced by **(0)**.",
+					"extra": {
+						"0": "1%, 3%, 5%, 7%, 9%, 10%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Eye Mask",
+					"description": "[Immoral Mind] Reduces MP Cost by 1000 and healing by **(0)**.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Mahjong Tiles",
+					"description": "[Invitation to Depravity] Increases DMG by **(0)**, and upon each hit, gains 2 stacks of [Rest].",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases ATK Boost by 40%.",
+				"dark": "Increases [Motivated] duration by 3s."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Reduces Cooldown by 3s.",
+				"dark": "Gains 30 additional [Rest] upon use."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases DMG by 40%.",
+				"dark": "Hit enemies take 25% increased M.DMG."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / ASPD + 1000",
+				"dark": "While [Motivated], increases all allies' ASPD by 2000, and increases their ATK by 5% of Yurara's ATK."
 			}
 		}
 	},
