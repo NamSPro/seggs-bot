@@ -8,6 +8,6 @@ module.exports = {
 		.setName('info')
 		.setDescription('Replies with my basic info'),
 	async execute(interaction) {
-		await interaction.reply('seggs-bot v0.0.1\nMade and maintained by NamSPro, with contributions from Miyo\nContact: NamSPro#2642 or [@aka_NamSPro](<https://twitter.com/aka_NamSPro>)');
+		await interaction.reply('seggs-bot v0.0.2\nMade and maintained by NamSPro, with contributions from Miyo\nContact: NamSPro#2642 or [@aka_NamSPro](<https://twitter.com/aka_NamSPro>)');
 	},
 };
