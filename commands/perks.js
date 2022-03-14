@@ -1,6 +1,6 @@
-// Command: /transcend
+// Command: /perks
 // Display the selected Diamiss' Unique transcend nodes (T3 and above)
-// The option to switch view to Generic/Class transcend nodes (T2 and below) is not supported yet
+// The option to switch view to Generic/Class transcend nodes (T2 and below) is also available
 
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
@@ -14,11 +14,11 @@ for (const itr in data.list) {
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('transcend')
+		.setName('perks')
 		.setDescription("Get a Diamiss' transcendence perks")
 		.addStringOption(option =>
 			option.setName('heroname')
-				.setDescription('The name of the Diamiss to get UTs')
+				.setDescription('The name of the Diamiss to get perks')
 				.setRequired(true)
 				.addChoices(heroList)),
 	async execute(interaction) {
