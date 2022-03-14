@@ -940,7 +940,7 @@
 				"dark": "Reduces MP Cost by 1000."
 			},
 			"t5": {
-				"light": "ATK, DEF, HP + 15% / M.Guar + 200",
+				"light": "ATK, DEF, HP + 15% / M.GuardS + 200",
 				"dark": "Restores 350 MP for all allies every 3s."
 			}
 		}
