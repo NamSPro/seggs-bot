@@ -18,8 +18,10 @@
 		"5": "cecilia",
 		"6": "zekka",
 		"7": "saya",
+		"10": "fumika",
 		"20": "tsukasa",
-		"22": "yurara"
+		"22": "yurara",
+		"47": "hikari"
 	},
 	"genericTP": {
 		"t1": [
@@ -626,6 +628,86 @@
 			}
 		}
 	},
+	"fumika": {
+		"fullname": "Rurido Fumika",
+		"class": "mystic",
+		"skill": {
+			"combo": {
+				"name": "None",
+				"specifics": "This combo skill haven't been implemented, yet.",
+				"description": "\u200b"
+			},
+			"passive": {
+				"name": "Rainbow-Colored Eyes",
+				"description": "Every 15s, deals 116.1% P.DMG to 4 random enemies and inflict 1 of the following: [Deal an extra 270% P.DMG over 10s], [Knockdown for 2s], [Stun for 5s]."
+			},
+			"s1": {
+				"name": "Cheer Bright",
+				"specifics": "MP Cost 1 / CD 8s",
+				"description": "Increases the ATK of all allies by 63% for 120 sec, and grants 3 random additional effects: [Increase Crit by 70], [Increase ATK Spd by 100], [Restores 500 MP]. Additional effects can stack up to 5 times."
+			},
+			"s2": {
+				"name": "Healing Shine",
+				"specifics": "MP Cost 2 / CD 11s",
+				"description": "Heals all allies by 540% ATK, and grant a buff that heals 1% their Max HP per second for 10s. Each heal have a 20% chance of being doubled."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Veriterupe",
+				"description": "Reduces all skill cooldowns by **(0)**, and increases the Crit and ASPD buff of [Cheer Bright] by **(1)** and **(2)**.",
+				"extra": {
+					"0": "1.2s, 1.4s, 1.7s, 2.1s, 2.5s, 3s",
+					"1": "20, 24, 29, 35, 42, 50",
+					"2": "200, 240, 290, 350, 420, 500"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Book Written by Father",
+					"description": "[Rainbow-Colored Eye] Changes the target to all enemies. Upon activation, recovers all allies' MP by **(0)**.",
+					"extra": {
+						"0": "200, 240, 290, 350, 420, 500"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Magnifying Glass",
+					"description": "[Cheer Bright] Reduces MP Cost by 1000, and increases all allies' M.DEF by **(0)**. This effect stacks up to 8 times.",
+					"extra": {
+						"0": "2%, 2.4%, 2.9%, 3.5%, 4.2%, 5%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Thin Book",
+					"description": "[Healing Shine] Increases Healing by 20%, and the chance of double recovery by **(0)**.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Reduces activation CD to 12s.",
+				"dark": "Targets take 25% increased M.DMG."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "All effects cannot be dispelled.",
+				"dark": "All effects stack up to 8 times."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases MP Cost by 1000, and cleanses all debuffs from all allies.",
+				"dark": "Each heal has a 15% chance to recover 1000 MP."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / M.Guard + 200",
+				"dark": "Auto atacks have a 30% chance of applying one of the following to the ally with the lowest HP: [Heals by 3% Max HP] , [Recovers 5% MP]."
+			}
+		}
+	},
 	"tsukasa": {
 		"fullname": "Ayase Tsukasa",
 		"class": "wizard",
@@ -780,6 +862,86 @@
 			"t5": {
 				"light": "ATK, DEF, HP + 15% / ASPD + 1000",
 				"dark": "While [Motivated], increases all allies' ASPD by 2000, and increases their ATK by 5% of Yurara's ATK."
+			}
+		}
+	},
+	"hikari": {
+		"fullname": "Mochizuki Hikari",
+		"class": "medic",
+		"skill": {
+			"combo": {
+				"name": "Howling Moon",
+				"specifics": "[Hikari x Satomi]",
+				"description": "Deals 2000% M.DMG and recovers all allies' MP by 3000. Additionally increases ASPD of the ally with the highest ATK by 5000 for 20s."
+			},
+			"passive": {
+				"name": "Star Prayer",
+				"description": "Increases M.DEF of all allies by 12.6% + 5% Hikari's M.DEF, and M.Guard by 250. When Hikari uses a skill, reduces M.DMG all allies take by 25% for 5s."
+			},
+			"s1": {
+				"name": "Milky Way",
+				"specifics": "MP Cost 2 / CD 10s",
+				"description": "Heal all allies by 504% ATK and recovers their MP by 2000. Healed allies take 15% reduced M.DMG for 10s. If the targe's HP is 50% or lower, increases healing amount by 50%."
+			},
+			"s2": {
+				"name": "Moon Halo",
+				"specifics": "MP Cost 3 / CD 15s",
+				"description": "Deploys a shield on the ally with the lowest HP, blocking 1512% ATK DMG for 15s. While the shield is active, increases the target's ATK by 504%, and heals them for a total of 2025% ATK."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Celestial Staff",
+				"description": "Increases Heal Rate of all allies by **(0)**, and their M.DEF by 5% Hikari's ATK. Every 5s, heals the ally with the lowest HP by **(1)** ATK.",
+				"extra": {
+					"0": "8%, 10%, 12%, 14%, 17%, 20%",
+					"1":"100%, 120%, 140%, 170%, 210%, 250%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: School Rooftop Key",
+					"description": "[Star Prayer] Restores **(0)** MP for all allies every second, but Hikari can't move for **(1)** upon wave starts.",
+					"extra": {
+						"0": "70, 80, 100, 125, 155, 200",
+						"1": "3s, 3.5s, 4s, 5s, 7s, 10s"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Astronomy Telescope",
+					"description": "[Milky Way] Increases M.DMG reduction by an additional **(0)**, and all allies' Heal Rate increases by 25% for 10s.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Zodiac Chart",
+					"description": "Reduces Cooldown by **(0)** and increases target's DMG dealt to non-Diamiss enemies by 20% for 15s.",
+					"extra": {
+						"0": "12%, 14%, 17%, 21%, 25%, 30%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases M.DEF buff by 20% and M.DMG reduction by 5%.",
+				"dark": "Upon using a skill, increases Resilience (?) of all allies by 25% for 5s."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Increases Healing by 40%.",
+				"dark": "Increases M.DMG reduction by another 10%."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Changes the target to the ally with the highest ATK.",
+				"dark": "Reduces MP Cost by 1000."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / M.Guar + 200",
+				"dark": "Restores 350 MP for all allies every 3s."
 			}
 		}
 	},
