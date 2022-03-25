@@ -18,6 +18,8 @@
 		"5": "cecilia",
 		"6": "zekka",
 		"7": "saya",
+		"8": "manami",
+		"9": "karin",
 		"10": "fumika",
 		"20": "tsukasa",
 		"22": "yurara",
@@ -518,7 +520,7 @@
 					}
 				},
 				"ut2": {
-					"name": "UT2: Dumb Bike Key",
+					"name": "UT2: Broken Bike Key",
 					"description": "[Claw Technique - Hard Climbing] Removes all debuffs on self upon casting and increases PDEF buff by **(0)**. Hit enemies have their P.Guard and Crit Chance reduced by 500 and **(1)** for 10s.",
 					"extra": {
 						"0": "20%, 24%, 29%, 35%, 42%, 50%",
@@ -625,6 +627,164 @@
 			"t5": {
 				"light": "ATK, DEF, HP + 15% / P.Guard + 200",
 				"dark": "Reduces All DMG taken by 30% and heals Saya for 10% ATK per second."
+			}
+		}
+	},
+	"manami": {
+		"fullname": "Matsumoto Manami",
+		"class": "wizard",
+		"skill": {
+			"combo": {
+				"name": "Maximum Drive",
+				"specifics": "[Manami x Haruka]",
+				"description": "Deals 2400% M.DMG to 3 random enemies and knocks them down for 2 sec. Hit enemies have their MP reduced by 2000."
+			},
+			"passive": {
+				"name": "Plague Wind",
+				"description": "Normal and Skill attacks inflicts [Wind Disease] on a target, dealing a total of 120% continuous M.DMG and reducing Heal Rate by 5% over 20 sec. [Wind Disease] can be stacked up to max 5 times."
+			},
+			"s1": {
+				"name": "Spiral Duet",
+				"specifics": "MP Cost 2 / CD 8s",
+				"description": "Attacks a random enemy and its nearby enemies 3 times, dealing a total of 1346.4% M.DMG and inflicting Stun for 3 sec."
+			},
+			"s2": {
+				"name": "Kamikaze Storm",
+				"specifics": "MP Cost 3 / CD 20s",
+				"description": "Attacks enemies within a wide frontal range of self 6 times, dealing a total of 3448.8% M.DMG and knocking them down for 3 sec."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Lion Claw Wand",
+				"description": "Deals M.DMG equal to **(0)** of ATK to enemies inflicted with [Wind Disease] every 7 sec, reducing their M.DEF by **(1)** and increasing M.DMG they take by **(2)** for 10 sec.",
+				"extra": {
+					"0": "100%, 120%, 140%, 170%, 210%, 250%",
+					"1": "10%, 12%, 14%, 17%, 21%, 25%",
+					"2": "10%, 12%, 14%, 17%, 21%, 25%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: An Art Book of Your Favorite Painter",
+					"description": "[Plague Wind] [Wind Disease] effect becomes irremovable and for the duration of [Wind Disease], targets take **(0)** increased M.DMG.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Makeup Pouch",
+					"description": "[Spiral Duet] Increases DMG by 50% and reduces Cooldown by **(0)**.",
+					"extra": {
+						"0": "1.2s, 1.4s, 1.7s, 2.1s, 2.5s, 3s"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Heart Necklace",
+					"description": "[Kamikaze Storm] DMG is increased by **(0)**. Upon Crit Hit on enemies with 5 or more stacks of [Wind Disease], skill cooldown is reduced by 4%.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Reduces targets' ATK by 5% per stack of [Wind Disease].",
+				"dark": "If the target is a boss, increases DMG of [Wind Disease] by 300%."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Reduces MP of the hit target by 250. Reduces MP by 500 if the target is a boss.",
+				"dark": "Recovers own MP by 250 upon a Critical Hit."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases MP Cost by 1000 and DMG by 100%.",
+				"dark": "Increases MP Cost by 1000 and dispels positive effects of enemies within range."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100",
+				"dark": "At the beginning of each battle, immediately reduces all Skill Cooldown of self by 30% and increases DMG dealt to Non-Diamiss enemies by 20% for 90s. This effect is irremovable."
+			}
+		}
+	},
+	"karin": {
+		"fullname": "Shidou Karin",
+		"class": "medic",
+		"skill": {
+			"combo": {
+				"name": "None",
+				"specifics": "This combo skill haven't been implemented, yet.",
+				"description": "\u200b"
+			},
+			"passive": {
+				"name": "Blessing of the Earth",
+				"description": "Every 7 sec, an ally with the lowest HP recovers 1 orb of mana and heals 180.6% of Karin's ATK as HP."
+			},
+			"s1": {
+				"name": "Philia",
+				"specifics": "MP Cost 2 / CD 10s",
+				"description": "Heals 4 allies with the lowest HP by 10% of their Max HP, and 1104% Karin's ATK over 8s. This effect cannot be dispelled."
+			},
+			"s2": {
+				"name": "Bios",
+				"specifics": "MP Cost 1 / CD 12s",
+				"description": "Cleanses negative effects from all allies, and increases their MDEF by 63% for 20s."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Magic Wand Cleopatra",
+				"description": "Every 20s, grants a buff to the ally with the lowest HP for 5s that make them immune to P.DMG, their HP cant be lowered below 1%, and increases their MP/sec by **(0)**.",
+				"extra": {
+					"0": "120%, 144%, 170%, 210%, 250%, 300%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Brother's Photo",
+					"description": "[Blessing of the Earth] Increases Heal by 50%, and increases target's ATK by **(0)** for 4s.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Mother's Scarf",
+					"description": "[Philia] Reduces MP Cost by 1000 and Cooldown by **(0)**.",
+					"extra": {
+						"0": "12%, 14%, 17%, 21%, 25%, 30%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Pectoral",
+					"description": "[Bios] Increases MDEF Boost by 50%, and reduces Cooldown by **(0)**.",
+					"extra": {
+						"0": "12%, 14%, 17%, 21%, 25%, 30%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Reduces activation CD to 5s.",
+				"dark": "Additionally recovers 1000 MP for the ally with highest ATK."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "MP cost is increased by 1000, but targets all allies.",
+				"dark": "Every heal has a 20% chance of cleansing all debuffs from the target."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Reduces MP Cost by 1000.",
+				"dark": "Additionally increases all allies' MDEF by 10% of Karin's MDEF."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / M.Guard + 200",
+				"dark": "Auto attacks have a 10% chance of reducing the target's All DEF by 20%, and reduces Karin's Skill Cooldown by 5%."
 			}
 		}
 	},
@@ -940,7 +1100,7 @@
 				"dark": "Reduces MP Cost by 1000."
 			},
 			"t5": {
-				"light": "ATK, DEF, HP + 15% / M.GuardS + 200",
+				"light": "ATK, DEF, HP + 15% / M.Guard + 200",
 				"dark": "Restores 350 MP for all allies every 3s."
 			}
 		}
