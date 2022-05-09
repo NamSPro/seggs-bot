@@ -21,6 +21,8 @@
 		"8": "manami",
 		"9": "karin",
 		"10": "fumika",
+		"11": "kujou",
+		"12": "saehide",
 		"20": "tsukasa",
 		"22": "yurara",
 		"47": "hikari"
@@ -79,7 +81,7 @@
 		}
 	},
 	"maki": {
-		"fullname": "Maki Kuonji",
+		"fullname": "Kuonji Maki",
 		"class": "slayer",
 		"skill": {
 			"combo": {
@@ -159,7 +161,7 @@
 		}
 	},
 	"minami": {
-		"fullname": "Minami Nasuhara",
+		"fullname": "Nasuhara Minami",
 		"class": "medic",
 		"skill": {
 			"combo": {
@@ -865,6 +867,165 @@
 			"t5": {
 				"light": "ATK, DEF, HP + 15% / M.Guard + 200",
 				"dark": "Auto atacks have a 30% chance of applying one of the following to the ally with the lowest HP: [Heals by 3% Max HP] , [Recovers 5% MP]."
+			}
+		}
+	},
+	"kujou": {
+		"fullname": "Sakurako Kujou",
+		"class": "wizard",
+		"skill": {
+			"combo": {
+				"name": "Bruma Weilas",
+				"specifics": "[Kujou x Arisa]",
+				"description": "Deals 1680% M.DMG to all enemies, and reduces their M.DEF by 35% for 6s."
+			},
+			"passive": {
+				"name": "White Wing Governor",
+				"description": "When HP is 50% or higher, ATK increases by 15.75% and Crit Chance increases by 250. Inflicts 1 stack of [White Wing's Curse] upon hitting enemies. Each stack deals 120% M.DMG over 20s, and increases skill DMG received from Kujou by 0.5% per stack. [White Wing's Curse] stacks up to 100 times, and is irremovable. Kujou heals for 10% of the DMG dealt by [White Wing's Curse]"
+			},
+			"s1": {
+				"name": "Glacier Luminis",
+				"specifics": "MP Cost 1 / CD 8s",
+				"description": "**Consumes 10% of current HP.**\nDeals 672% M.DMG to enemies in a wide range and increases M.DMG they take by 25% for 10s."
+			},
+			"s2": {
+				"name": "...? (The translator is suffering a stroke)",
+				"specifics": "MP Cost 3 / CD 12s",
+				"description": "**Consumes 10% of current HP.**\nDeals 2150.4% M.DMG to enemies in a straight line and stuns them for 3s."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Albaaras",
+				"description": "When HP is 50% or higher, ATK increases by **(0)**. When HP is below 50%, DMG taken reduces by **(1)**.",
+				"extra": {
+					"0": "20%, 24%, 29%, 35%, 42%, 50%",
+					"1": "10%, 12%, 14%, 17%, 21%, 25%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Signet Ring",
+					"description": "[White Wing Governor] Increases DMG of [White Wing's Curse] by 50%, and Kujou's ATK increases by 1% for 10s upon attacking enemies with 100 or more stack of [White Wing's Curse]. This effect stacks up to **(0)** times.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Violin Music Score",
+					"description": "[Glacier Luminis] Increases DMG by 50% and inflicts **(0)** additional stacks of [White Wing's Curse] upon hit.",
+					"extra": {
+						"0": "1, 2, 4, 6, 8, 10"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Equestrian Gloves",
+					"description": "[...? (The translator is suffering a stroke)] Increases DMG by **(0)**, and recovers 400 MP per hit.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "[White Wing's Curse] now stacks up to 200 times.",
+				"dark": "Increases Heal Rate of all allies by 20% and reduces Heal Rate of all enemies by 20%."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Increases MP Cost by 1000 and DMG by 100%.",
+				"dark": "Increases M.DMG hit targets take by an additional 25%."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Reduces all skill Cooldowns by 5% upon attacking enemies with 80 or more stacks of [White Wing's Curse].",
+				"dark": "Reduces MP Cost by 1000."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100.",
+				"dark": "Increases HP Cost of all skills to 15% of current HP, but reduces their Cooldown by 20%."
+			}
+		}
+	},
+	"saehide": {
+		"fullname": "Yagami Saehide",
+		"class": "slayer",
+		"skill": {
+			"combo": {
+				"name": "Todoroki Crush",
+				"specifics": "Saehide x Hotaru",
+				"description": "Deals 1344% P.DMG to all enemies, stuns them for 2s, and reduces their P.DEF by 30% for 6s."
+			},
+			"passive": {
+				"name": "Gouki's Fierceness",
+				"description": "Saehide attacks [Mark]-ed target together with the original target. If there's no enemy with [Mark], attacks the enemy with the lowest P.DEF instead. ATK increases by 15.75% while an enemy is [Mark]-ed. When a [Mark]-ed enemy dies, [Mark] an enemy with lowest P.DEF for 10s. [Mark] cannot be removed."
+			},
+			"s1": {
+				"name": "Rough Payment",
+				"specifics": "MP Cost 3 / CD 12s",
+				"description": "Deals 1881.6% P.DMG to a [Mark]-ed enemy and enemies around it, Stunning them for 2s. If no enemy is [Mark]-ed, targets the enemy with lowest P.DEF instead. Additionally grants a 428.4% ATK DMG shield to self and the ally with lowest M.DEF. While the shield is active, allies gain immunity to CC. Saehide does not gain shield if there's no ally left."
+			},
+			"s2": {
+				"name": "Branding",
+				"specifics": "MP Cost 2 / CD 14s",
+				"description": "Deal 3150% P.DMG to the enemy with lowest HP and [Mark] them for 15s. If the target is not a Diamiss, deals an additional 3780% P.DMG that ignores DEF. Increases DMG by 40% against [Mark]-ed enemies. If this skill defeats an enemy, automatically activate [Rough Payment] (S1) without MP Cost and Cooldown."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Demon Fang, Kongo's Hammer",
+				"description": "Increases ATK SPD by **(0)** and ATK by **(1)**. Upon attacking a [Mark]-ed enemy, deals an additional **(2)** P.DMG. This additional DMG activates once every 2s.",
+				"extra": {
+					"0": "2000, 2400, 2900, 3500, 4200, 5000",
+					"1": "10%, 11%, 13%, 15%, 17%, 20%",
+					"2": "200%, 240%, 290%, 350%, 420%, 500%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Bear Plushie",
+					"description": "[Gouki's Fierceness] Increases ATK Boost by 50%, and Stuns [Mark]-ed enemies for **(0)** every 5s. Each wave, [Mark] the enemy with the lowest HP.",
+					"extra": {
+						"0": "1s, 1.2s, 1.4s, 1.7s, 2.1s, 2.5s"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Shoujo Manga",
+					"description": "[Rough Payment] Reduces MP Cost by 1000, and recovers **(0)** MP upon Critical Hits.",
+					"extra": {
+						"0": "200, 220, 260, 320, 400, 500"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Jewelry Box",
+					"description": "[Branding] Increases DMG by 50%, and increases ATK by **(0)** for 15s upon Critical Hits.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases Crit Chance by 400 if an enemy is [Mark]-ed.",
+				"dark": "Increases ATK Spd by 2000 if an enemy is [Mark]-ed."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Gains immunity to CC while casting.",
+				"dark": "Increases Stun duration by 2s."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Removes all buffs from hit enemies, and inflicts Stun for 1s.",
+				"dark": "Targets the enemy with lowest HP instead."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit DMG + 20%.",
+				"dark": "Upon defeating an enemy, reduces Cooldown by 50% and recover 1000 MP."
 			}
 		}
 	},

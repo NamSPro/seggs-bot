@@ -45,6 +45,7 @@ module.exports = {
 		// T2 and below perks
 		const embedGenericPerks = new MessageEmbed()
 			.setTitle('Generic Transcendence Perks')
+			.setDescription('Perks are placed in order from left to right in-game.')
 			.setColor('AQUA')
 			.setFooter({ text: 'If you spot any mistake in the infos, give NamSPro#2642 or @aka_NamSPro a yell.' });
 		let t1Info = '';
