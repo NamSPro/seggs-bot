@@ -7,8 +7,7 @@
 		"skills": "Get a Diamiss' skills.",
 		"uw": "Get a Diamiss' UW.",
 		"ut": "Get a Diamiss' UTs.",
-		"transcend": "Get a Diamiss' Trancendence Perks.",
-		"seggs": "No explanation needed."
+		"transcend": "Get a Diamiss' Trancendence Perks."
 	},
 	"list": {
 		"1": "maki",
@@ -23,6 +22,8 @@
 		"10": "fumika",
 		"11": "kujou",
 		"12": "saehide",
+		"13": "hotaru",
+		"14": "ren",
 		"20": "tsukasa",
 		"22": "yurara",
 		"47": "hikari"
@@ -1026,6 +1027,164 @@
 			"t5": {
 				"light": "ATK, DEF, HP + 15% / Crit DMG + 20%.",
 				"dark": "Upon defeating an enemy, reduces Cooldown by 50% and recover 1000 MP."
+			}
+		}
+	},
+	"hotaru": {
+		"fullname": "Kuroshida Hotaru",
+		"class": "guardian",
+		"skill": {
+			"combo": {
+				"name": "Todoroki Crush",
+				"specifics": "Saehide x Hotaru",
+				"description": "Deals 1344% P.DMG to all enemies, stuns them for 2s, and reduces their P.DEF by 30% for 6s."
+			},
+			"passive": {
+				"name": "Listening Mornarch",
+				"description": "When allies other than Hotaru takes M.DMG, increases their M.DEF by 15.75% for 5s. This effect stacks up to 5 times."
+			},
+			"s1": {
+				"name": "Fallen Angels' Debate",
+				"specifics": "MP Cost 1 / CD 30s",
+				"description": "Deals 235.8% P.DMG to surrounding enemies, and Stuns them for 1s. Additionally, increases own M.DEF by 100.25% for 10s, and [Shoulders] (take) 80% of all allies' M.DMG in their place."
+			},
+			"s2": {
+				"name": "End of Certification",
+				"specifics": "MP Cost 4 / CD 23s",
+				"description": "Attacks enemies within range 5 times, dealing a total of 1719% P.DMG and Stuns them for 4s. Each hit have a 50% chance of removing all buffs."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Black Trash",
+				"description": "When an ally other than Hotaru takes DMG, there's a **(0)** chance of deploying a **(1)** ATK DMG shield on them for 5s. This effect activates once every 5s.",
+				"extra": {
+					"0": "10%, 12%, 14%, 17%, 21%, 25%",
+					"1": "320%, 384%, 450%, 552%, 660%, 800%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Rune Stone",
+					"description": "[Listening Monarch] Increases M.DEF buff duration by 5s, and each stack additionally reduces M.DMG taken by **(0)**.",
+					"extra": {
+						"0": "1%, 1.2%, 1.4%, 1.7%, 2.1%, 2.5%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: \"Magic\" Book",
+					"description": "[Fallen Angels' Debate] Gains immunity to CC while casting, and reduces M.DMG taken by **(0)** while [Shoulders] is active.",
+					"extra": {
+						"0": "10%, 12%< 14%, 17%, 21%, 25%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Dowsing Pendulum",
+					"description": "[End of Certification] Reduces hit enemies' ATK Spd by **(0)** for 10s. Each hit now has a 75% chance of dispelling all buffs.",
+					"extra": {
+						"0": "1000, 1200, 1400, 1700, 2100, 2500"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases M.DEF buff by 40%.",
+				"dark": "Increases the maximum number of stacks to 8."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "MP Cost is increased by 1000, but reduces DMG taken from [Shoulders] by 30%.",
+				"dark": "[Shoulders] cannot be dispelled."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases Stun duration by 2s.",
+				"dark": "Reduces MP Cost by 1000."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / P.Guard + 200.",
+				"dark": "If HP drops below 40%, it won't drop below 10% for 6s, and increases all allies' ATK by 50% Hotaru's M.DEF for the duration. This effect activates once every 60s."
+			}
+		}
+	},
+	"ren": {
+		"fullname": "Nishinomiya Ren",
+		"class": "slayer",
+		"skill": {
+			"combo": {
+				"name": "Hell Hospital",
+				"specifics": "Ren x Koto",
+				"description": "Deals 3200% P.DMG to 4 random enemies and knock them down for 2s, and heals all allies for 20% of DMG dealt."
+			},
+			"passive": {
+				"name": "Evil Eater",
+				"description": "Ren cannot Lifesteal, but her Max HP and Crit Chance is increased by 20% and 100. For each 1% Max HP lost, increases Crit DMG by 1% and ATK Spd by 40. Once per battle, when HP reaches 0, locks all Skills and revive, gaining 40% Crit DMG, 400 ATK Spd, and immunity to CC. 5s after revival, consumes 100% of Max HP."
+			},
+			"s1": {
+				"name": "Evil Slaughter",
+				"specifics": "MP Cost 2 / CD 12s",
+				"description": "Deals 1102.5% M.DMG to an enemy and stops them from receiving buffs for 4s. Afterwards, deals 588% M.DMG to enemies around the target and Stuns them for 4s. Ren heals for 10% of the DMG dealt."
+			},
+			"s2": {
+				"name": "King of Gluttony",
+				"specifics": "MP Cost 3 / CD 10s",
+				"description": "**Consumes 10% of current HP**, cleanses all debuffs, and becomes [King of Gluttony], dealing 1881.6% M.DMG to surrounding enemies. [King of Gluttony]: Consumes 1.5% current HP every sec, but gains immunity to CC, Crit DMG and ATK Spd increases by 50% and 3500. The Crit DMG and ATK Spd buff increases over time. [King of Gluttony] cannot be dispelled and will be automatically removed when Ren's HP is 25% or lower."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Super Evil",
+				"description": "Increases own Crit DMG by **(0)**. When Ren auto attacks, [Super Evil] deals an additional **(1)** P.DMG and heals Ren for 20% of the DMG dealt. While in [King of Gluttony], the DMG of [Super Evil] is doubled.",
+				"extra": {
+					"0": "20%, 24%, 29%, 35%, 42%, 50%",
+					"1": "30%, 36%, 43%, 50%, 62%, 75%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Shoes",
+					"description": "[Evil Eater] Increases DMG dealt to non-Diamiss enemies by **(0)**, and reduces DMG taken by 20%.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Smartwatch",
+					"description": "[Evil Slaughter] Gains immunity to CC while casting, and each hit recovers **(0)** MP.",
+					"extra": {
+						"0": "200, 240, 290, 350, 420, 500"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Misanga",
+					"description": "[King of Gluttony] Deals **(0)** P.DMG to nearby enemies every second while [King of Gluttony] is active. [King of Gluttony] also increases resilience by 30%.",
+					"extra": {
+						"0": "40%, 48%, 58%, 70%, 84%, 100%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Upon resurrection, increases ATK by 50%.",
+				"dark": "Upon resurrection, knocks nearby enemies down for 3s."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Reduces MP Cost by 1000.",
+				"dark": "Increases P.DMG hit enemies take by 25% for 10s."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Stun hit enemies for 2s.",
+				"dark": "During [King of Gluttony], every 1% HP lost increases Recovery by 0.4% and reduces all DMG taken by 0.4%."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit DMG + 20%.",
+				"dark": "Increases DMG dealt to non-DIamiss enemies by 1% every second. This effect stacks up to 60 times, and cannot be dispelled."
 			}
 		}
 	},
