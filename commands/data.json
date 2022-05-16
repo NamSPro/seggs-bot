@@ -24,6 +24,8 @@
 		"12": "saehide",
 		"13": "hotaru",
 		"14": "ren",
+		"15": "kirari",
+		"16": "shizuku",
 		"20": "tsukasa",
 		"22": "yurara",
 		"47": "hikari"
@@ -1185,6 +1187,164 @@
 			"t5": {
 				"light": "ATK, DEF, HP + 15% / Crit DMG + 20%.",
 				"dark": "Increases DMG dealt to non-DIamiss enemies by 1% every second. This effect stacks up to 60 times, and cannot be dispelled."
+			}
+		}
+	},
+	"kirari": {
+		"fullname": "Kirari Anderson",
+		"class": "mystic",
+		"skill": {
+			"combo": {
+				"name": "None",
+				"specifics": "This combo skill haven't been implemented, yet.",
+				"description": "\u200b"
+			},
+			"passive": {
+				"name": "Demon King - Lust",
+				"description": "Increases Crit Chance by 300 and attacks inflict [Curse of Lust] for 10s. Enemies inflicted with [Curse of Lust] have their ATK and Crit Chance reduced by 25% and 250."
+			},
+			"s1": {
+				"name": "Easy Peasy",
+				"specifics": "MP Cost 2 / CD 9s",
+				"description": "Deals a total of 1009.3% M.DMG over 3 attacks to enemies within the front range, reducing their ATK Spd and M.DEF by 2500 and 30% for 15s."
+			},
+			"s2": {
+				"name": "Keep Going!",
+				"specifics": "MP Cost 3 / CD 13s",
+				"description": "Deals 1799.1% M.DMG to 2 enemies and knocks them down for 6s. Hit targets take 1803.6% M.DMG over 6s, and takes 30% increased M.DMG during the DoT."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Rest In Me",
+				"description": "On Critical Hits, reduces hit enemy's Resilience by 50% for 10s, and increases Kirari's Crit DMG by **(0)** for 10s. The Crit DMG increase stacks up to 20 times.",
+				"extra": {
+					"0": "2%, 2.4%, 2.9%, 3.5%, 4.2%, 5%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Picture Received from Brother",
+					"description": "[Demon King - Lust] Every 10s, deals 200% M.DMG to enemies under [Curse of Lust]. Whenever this effect deals DMG, increases ATK by **(0)** for 20s. This effect stacks up to 10 times.",
+					"extra": {
+						"0": "2%, 2.4%, 2.9%, 3.5%, 4.2%, 5%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Party Goods",
+					"description": "[Easy Peasy] Gains immunity to CC while casting. Hit targets have their MP reduced by **(0)** and DEF reduced by 30%.",
+					"extra": {
+						"0": "100, 120, 140, 170, 210, 250"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Cute Apron",
+					"description": "[Keep Going!] Increases DMG by 50% and increases M.DMG hit enemies take by **(0)** for 10s.",
+					"extra": {
+						"0": "10%, 12%, 14%, 17%, 21%, 25%"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases ATK by 10% for each enemy under [Curse of Lust]. This effect stacks up to 5 times and is irremovable.",
+				"dark": "Increases M.DMG hit targets take by 10% for 10s."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Increases DMG by 40%.",
+				"dark": "Each hit have a 20% chance of Stunning for 3s."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases MP Cost by 1000 and changes the number of targets to 3.",
+				"dark": "Increases knock down duration by 1.5s."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100",
+				"dark": "Upon Critical Hits, there's a 30% chance of Stunning for 1s and reduces all skill Cooldown by 2%."
+			}
+		}
+	},
+	"shizuku": {
+		"fullname": "Amagasa Shizuku",
+		"class": "medic",
+		"skill": {
+			"combo": {
+				"name": "Red Night Mist",
+				"specifics": "[Saya x Shizuku]",
+				"description": "Deals 1680% P.DMG to all enemies. Also restores HP of all allies by 30% of maximum HP."
+			},
+			"passive": {
+				"name": "Lady of the Dusk",
+				"description": "Increases ATK and P.DEF of all allies by 12.6% and 20%. Upon attacking, inflicts [Exiled from Paradise] for 5s. Targets [Exiled from Paradise] receives 500% P.DMG over time and have their P.DEF reduced by 20%. Also, Shizuku will not be selected as the ally with the highest ATK."
+			},
+			"s1": {
+				"name": "Midnight Veil",
+				"specifics": "MP Cost 2 / CD 10s",
+				"description": "Recovers 504% ATK as HP for all allies, and makes them immune to the next DMG hit."
+			},
+			"s2": {
+				"name": "Bloodshed Rain",
+				"specifics": "MP Cost 3 / CD 11s",
+				"description": "Grants [Rain of Genesis] to 2 allies with the highest ATK for 15s. [Rain of Genesis] increases the ally's ATK by 300% of Shizuku's ATK, stacks up to 10 times, and each stack adds an additional 8% of Shizuku's ATK to the buff. [Rain of Genesis] also prevents the ally's HP from dropping below 5%."
+			}
+		},
+		"ug": {
+			"uw": {
+				"name": "Bloody Moon",
+				"description": "Increases the DMG of [Exiled from Paradise] by **(0)**, and inflicted enemies take **(1)** increased P.DMG for 3s. It also reduces hit enemies' DEF by **(2)** for 5s.",
+				"extra": {
+					"0": "40%, 48%, 57%, 69%, 83%, 100%",
+					"1": "10%, 12%, 14%, 17%, 21%, 25%",
+					"2": "10%, 12%, 14%, 17%, 21%, 25%"
+				}
+			},
+			"ut": {
+				"utp": {
+					"name": "Passive UT: Hairpin",
+					"description": "[Lady of the Dusk] Increases ATK Boost by 50%, and reduces P.DMG all allies take by **(0)**",
+					"extra": {
+						"0": "4%, 4.8%, 5.8%, 7%, 8.4%, 10%"
+					}
+				},
+				"ut1": {
+					"name": "UT1: Language Book",
+					"description": "[Midnight Veil] Increases Healing by 50%, and increases healed allies' Crit DMG by **(0)** for 10s.",
+					"extra": {
+						"0": "20%, 24%, 29%, 35%, 42%, 50%"
+					}
+				},
+				"ut2": {
+					"name": "UT2: Cake-shaped Keychain",
+					"description": "[Bloodshed Rain] Cleanses all debuffs from targets, and they gains immunity to CC for **(0)**.",
+					"extra": {
+						"0": "2s, 3s, 4s, 5s, 6s, 7s"
+					}
+				}
+			}
+		},
+		"transcend": {
+			"passive": {
+				"name": "Passive",
+				"light": "Increases own DMG dealt to enemies by 20% and allows Shizuku to be selected as the ally with the highest ATK.",
+				"dark": "Increases targets' P.DMG taken by 20%."
+			},
+			"s1": {
+				"name": "Skill 1",
+				"light": "Increases targets' ATK by 10% for 10s.",
+				"dark": "Reduces MP Cost by 1000."
+			},
+			"s2": {
+				"name": "Skill 2",
+				"light": "Increases the maximum stack of [Rain of Genesis] by 5.",
+				"dark": "Reduces MP Cost by 1000."
+			},
+			"t5": {
+				"light": "ATK, DEF, HP + 15% / Crit Chance + 100",
+				"dark": "Upon taking DMG, increases ATK of all allies by 2%. This effect stacks up to 20 times."
 			}
 		}
 	},
