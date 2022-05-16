@@ -12,7 +12,7 @@ node .
 
 ### Images dependency
 - The image assets are downloaded/cloned from [here](https://github.com/NamSPro/seggs-bot-assets)
-- For R18 assets to use with `/seggs`, contact me.
+- ~~For R18 assets to use with `/seggs`, contact me.~~ Not supported at the moment.
 
 ### config-EDITME
 - If you wish to have a specific server deployed instantly, add a `guildId` field. Otherwise comment the `rest.put` which routes to `ApplicationGuildCommands`.
